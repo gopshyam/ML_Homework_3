@@ -11,8 +11,7 @@ def find_majority_label(data):
     pos_count = 0
 
     for element in data:
-        if data[-1] == '1':
-            pos_count += 1
+        pos_count += int(element[-1])
 
     neg_count = len(data) - pos_count
 
